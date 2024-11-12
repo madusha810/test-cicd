@@ -29,12 +29,12 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            script {
-                sh "docker stop ${DOCKER_IMAGE_NAME} || true"
-                sh "docker rm ${DOCKER_IMAGE_NAME} || true"
-            }
-        }
-    }
+    // post {
+    //     always {
+    //         script {
+    //             sh "docker stop ${DOCKER_IMAGE_NAME} || true"
+    //             sh "docker rm ${DOCKER_IMAGE_NAME} || true"
+    //         }
+    //     }
+    // }
 }
